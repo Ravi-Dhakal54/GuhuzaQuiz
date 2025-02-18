@@ -1,0 +1,56 @@
+    /* General styles */
+    .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        overflow: hidden; /* Prevent scrolling during animation */
+      }
+  
+
+
+      #animation-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 30%;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: none; /* Hidden by default */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    
+    #animated-image {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 1.5s ease-in-out;
+    }
+    
+    #animation-text {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #333;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 1.5s ease-in-out 0.5s;
+    }
+
+      /* Animation classes */
+      .animate-image {
+        right: 0 !important; /* Move to the center */
+        opacity: 1 !important;
+      }
+  
+      .animate-text {
+        right: 0 !important; /* Move to the center */
+        opacity: 1 !important;
+      }
